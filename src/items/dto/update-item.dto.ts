@@ -10,4 +10,7 @@ export class UpdateItemDto {
 
     @ApiPropertyOptional({ example: 1299.99, description: 'Price in USD' })
     price?: number;
+
+    @ApiPropertyOptional({ example: 'https://example.com/laptop.jpg', description: 'Image URL for the item' })
+    image?: string;
 }

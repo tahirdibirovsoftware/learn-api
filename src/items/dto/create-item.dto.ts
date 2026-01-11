@@ -1,4 +1,4 @@
-import { ApiProperty } from '@nestjs/swagger';
+import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 
 // DTO (Data Transfer Object) for creating a new item
 export class CreateItemDto {
@@ -10,4 +10,7 @@ export class CreateItemDto {
 
     @ApiProperty({ example: 999.99, description: 'Price in USD' })
     price: number;
+
+    @ApiPropertyOptional({ example: 'https://example.com/laptop.jpg', description: 'Image URL for the item' })
+    image?: string;
 }
