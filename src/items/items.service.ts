@@ -8,13 +8,14 @@ export class ItemsService {
     // In-memory storage - data is stored in this array
     // Data will be lost when the server restarts
     private items: Item[] = [
-        { id: 1, name: 'Laptop', description: 'Powerful laptop for development', price: 999.99 },
-        { id: 2, name: 'Mouse', description: 'Wireless ergonomic mouse', price: 49.99 },
-        { id: 3, name: 'Keyboard', description: 'Mechanical keyboard with RGB', price: 129.99 },
+        { id: 1, name: 'Laptop', description: 'Powerful laptop for development', price: 999.99, image: '' },
+        { id: 2, name: 'Mouse', description: 'Wireless ergonomic mouse', price: 49.99, image: '' },
+        { id: 3, name: 'Keyboard', description: 'Mechanical keyboard with RGB', price: 129.99, image: '' },
+        { id: 4, name: 'Monitor', description: '27-inch 4K display', price: 449.99, image: '' },
     ];
 
     // Counter for generating unique IDs
-    private idCounter = 4;
+    private idCounter = 5;
 
     // GET all items
     findAll(): Item[] {
